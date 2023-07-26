@@ -1,0 +1,2155 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 50
+        -report_by design
+Design : pulpino_top_pads
+Version: O-2018.06-SP1
+Date   : Sun Jul  9 04:45:37 2023
+****************************************
+
+  Startpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_ (rising edge-triggered flip-flop clocked by tck)
+  Endpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_ (rising edge-triggered flip-flop clocked by tck)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: tck
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.82      0.82
+
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/CP (DFSND0BWP7T)
+                                                   0.00      0.82 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/Q (DFSND0BWP7T)
+                                                   0.21      1.03 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/copt_h_inst_17727/Z (DEL02BWP7T)
+                                                   0.25      1.28 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/U36/ZN (AOI22D0BWP7T)
+                                                   0.05      1.33 f
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/U35/ZN (OAI211D0BWP7T)
+                                                   0.06      1.39 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/D (DFSND0BWP7T)
+                                                   0.00      1.39 r
+  data arrival time                                          1.39
+
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.84      0.84
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/CP (DFSND0BWP7T)
+                                                   0.00      0.84 r
+  clock uncertainty                                0.70      1.54
+  library hold time                                0.01      1.55
+  data required time                                         1.55
+  ------------------------------------------------------------------------
+  data required time                                         1.55
+  data arrival time                                         -1.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.16
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_4__20_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_20_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.13      1.13
+
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_4__20_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.13 r
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_4__20_/Q (EDFCNQD0BWP7T)
+                                                   0.20      1.33 r
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/U256/ZN (AOI22D0BWP7T)
+                                                   0.05      1.37 f
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/U258/ZN (ND4D0BWP7T)
+                                                   0.15      1.52 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U63/Z (AO222D0BWP7T)
+                                                   0.14      1.66 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U42/ZN (AOI22D0BWP7T)
+                                                   0.05      1.71 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U41/ZN (IOA21D0BWP7T)
+                                                   0.04      1.75 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_20_/D (DFCNQD1BWP7T)
+                                                   0.00      1.75 r
+  data arrival time                                          1.75
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_20_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.01      1.88
+  data required time                                         1.88
+  ------------------------------------------------------------------------
+  data required time                                         1.88
+  data arrival time                                         -1.75
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.12
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__19_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__19_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__19_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.31 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U259/ZN (AOI22D0BWP7T)
+                                                   0.06      1.37 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_19054/Z (BUFFD0BWP7T)
+                                                   0.08      1.44 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U261/ZN (CKND2D0BWP7T)
+                                                   0.13      1.58 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/copt_h_inst_19191/Z (DEL01BWP7T)
+                                                   0.13      1.71 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_12_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.71 f
+  data arrival time                                          1.71
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_12_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.02      1.82
+  data required time                                         1.82
+  ------------------------------------------------------------------------
+  data required time                                         1.82
+  data arrival time                                         -1.71
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.11
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__39_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/Q (EDFCNQD0BWP7T)
+                                                   0.28      1.29 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11364/Z (DEL02BWP7T)
+                                                   0.38      1.67 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__39_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.68 f
+  data arrival time                                          1.68
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__39_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.06      1.78
+  data required time                                         1.78
+  ------------------------------------------------------------------------
+  data required time                                         1.78
+  data arrival time                                         -1.68
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__39_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/Q (EDFCNQD0BWP7T)
+                                                   0.28      1.29 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11364/Z (DEL02BWP7T)
+                                                   0.38      1.67 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__39_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.68 f
+  data arrival time                                          1.68
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__39_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.06      1.78
+  data required time                                         1.78
+  ------------------------------------------------------------------------
+  data required time                                         1.78
+  data arrival time                                         -1.68
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__39_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/Q (EDFCNQD0BWP7T)
+                                                   0.28      1.29 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11364/Z (DEL02BWP7T)
+                                                   0.38      1.67 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__39_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.68 f
+  data arrival time                                          1.68
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__39_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.06      1.78
+  data required time                                         1.78
+  ------------------------------------------------------------------------
+  data required time                                         1.78
+  data arrival time                                         -1.68
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+
+  Startpoint: top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCER_q_reg_3_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCCR_inc_q_reg_0_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCER_q_reg_3_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.08 r
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCER_q_reg_3_/Q (DFCNQD0BWP7T)
+                                                   0.23      1.31 r
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/U548/ZN (AOI22D0BWP7T)
+                                                   0.07      1.38 f
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/U546/ZN (ND2D1BWP7T)
+                                                   0.07      1.45 r
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/U255/ZN (AOI222D1BWP7T)
+                                                   0.12      1.57 f
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/U252/ZN (AOI31D1BWP7T)
+                                                   0.10      1.68 r
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCCR_inc_q_reg_0_/D (DFCNQD0BWP7T)
+                                                   0.00      1.68 r
+  data arrival time                                          1.68
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+  top_p/core_region_i/CORE_RISCV_CORE/cs_registers_i/PCCR_inc_q_reg_0_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.08 r
+  clock uncertainty                                0.70      1.78
+  library hold time                               -0.00      1.77
+  data required time                                         1.77
+  ------------------------------------------------------------------------
+  data required time                                         1.77
+  data arrival time                                         -1.68
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_12_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_12_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_12_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.16 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_12_/Q (EDFCNQD0BWP7T)
+                                                   0.24      1.40 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_17743/Z (DEL02BWP7T)
+                                                   0.24      1.64 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U72/Z (AO222D1BWP7T)
+                                                   0.08      1.72 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U58/ZN (AOI22D0BWP7T)
+                                                   0.08      1.80 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U57/ZN (IOA21D0BWP7T)
+                                                   0.07      1.86 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_12_/D (DFCNQD1BWP7T)
+                                                   0.00      1.86 f
+  data arrival time                                          1.86
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.20      1.20
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_12_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.20 r
+  clock uncertainty                                0.70      1.90
+  library hold time                                0.06      1.96
+  data required time                                         1.96
+  ------------------------------------------------------------------------
+  data required time                                         1.96
+  data arrival time                                         -1.86
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_ (rising edge-triggered flip-flop clocked by tck)
+  Endpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_22_ (rising edge-triggered flip-flop clocked by tck)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: tck
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.82      0.82
+
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/CP (DFSND0BWP7T)
+                                                   0.00      0.82 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_23_/Q (DFSND0BWP7T)
+                                                   0.21      1.03 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/copt_h_inst_17727/Z (DEL02BWP7T)
+                                                   0.25      1.28 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/U56/Z (AO221D0BWP7T)
+                                                   0.12      1.40 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/copt_h_inst_19276/Z (BUFFD0BWP7T)
+                                                   0.08      1.48 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_22_/D (DFSND0BWP7T)
+                                                   0.00      1.48 r
+  data arrival time                                          1.48
+
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.85      0.85
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_22_/CP (DFSND0BWP7T)
+                                                   0.00      0.85 r
+  clock uncertainty                                0.70      1.56
+  library hold time                                0.02      1.57
+  data required time                                         1.57
+  ------------------------------------------------------------------------
+  data required time                                         1.57
+  data arrival time                                         -1.48
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.13      1.13
+
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.13 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_/Q (DFCNQD1BWP7T)
+                                                   0.46      1.59 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U7/Z (AO222D1BWP7T)
+                                                   0.22      1.81 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_/D (DFCNQD1BWP7T)
+                                                   0.00      1.81 f
+  data arrival time                                          1.81
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_31_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.15 r
+  clock uncertainty                                0.70      1.85
+  library hold time                                0.05      1.90
+  data required time                                         1.90
+  ------------------------------------------------------------------------
+  data required time                                         1.90
+  data arrival time                                         -1.81
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__15_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__15_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__15_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_17884/Z (DEL02BWP7T)
+                                                   0.23      1.53 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U248/ZN (AOI22D0BWP7T)
+                                                   0.07      1.60 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U249/ZN (CKND2D0BWP7T)
+                                                   0.10      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_8_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.70 f
+  data arrival time                                          1.70
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_8_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.05      1.79
+  data required time                                         1.79
+  ------------------------------------------------------------------------
+  data required time                                         1.79
+  data arrival time                                         -1.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_21_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_21_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_21_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_21_/Q (EDFCNQD0BWP7T)
+                                                   0.24      1.39 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_18480/Z (DEL02BWP7T)
+                                                   0.24      1.64 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U62/Z (AO222D1BWP7T)
+                                                   0.08      1.72 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U40/ZN (AOI22D0BWP7T)
+                                                   0.08      1.80 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U39/ZN (IOA21D0BWP7T)
+                                                   0.05      1.85 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_21_/D (DFCNQD1BWP7T)
+                                                   0.00      1.85 f
+  data arrival time                                          1.85
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_21_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.85
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__10_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.08      1.08
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__10_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.08 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__10_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18176/Z (DEL02BWP7T)
+                                                   0.22      1.53 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U233/ZN (AOI22D0BWP7T)
+                                                   0.07      1.60 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U234/ZN (CKND2D0BWP7T)
+                                                   0.10      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_3_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.70 f
+  data arrival time                                          1.70
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_3_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.05      1.79
+  data required time                                         1.79
+  ------------------------------------------------------------------------
+  data required time                                         1.79
+  data arrival time                                         -1.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+
+  Startpoint: top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_id_S_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_1__37_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_id_S_reg_1_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_id_S_reg_1_/Q (EDFCNQD0BWP7T)
+                                                   0.24      1.25 f
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/copt_h_inst_16313/Z (DEL02BWP7T)
+                                                   0.31      1.56 f
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/U106/Z (AO22D0BWP7T)
+                                                   0.12      1.68 f
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/U56/ZN (CKND0BWP7T)
+                                                   0.05      1.73 r
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/U15/ZN (MUX2ND0BWP7T)
+                                                   0.06      1.79 f
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_1__37_/D (DFCND0BWP7T)
+                                                   0.00      1.79 f
+  data arrival time                                          1.79
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.12      1.12
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_1__37_/CP (DFCND0BWP7T)
+                                                   0.00      1.12 r
+  clock uncertainty                                0.70      1.82
+  library hold time                                0.05      1.87
+  data required time                                         1.87
+  ------------------------------------------------------------------------
+  data required time                                         1.87
+  data arrival time                                         -1.79
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_cmd_reg_13_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_13_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_cmd_reg_13_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.16 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_cmd_reg_13_/Q (EDFCNQD0BWP7T)
+                                                   0.23      1.39 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_18191/Z (DEL02BWP7T)
+                                                   0.23      1.63 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U71/Z (AO222D1BWP7T)
+                                                   0.12      1.75 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U56/ZN (AOI22D0BWP7T)
+                                                   0.08      1.83 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U55/ZN (IOA21D0BWP7T)
+                                                   0.05      1.88 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_13_/D (DFCNQD1BWP7T)
+                                                   0.00      1.88 f
+  data arrival time                                          1.88
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.20      1.20
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_13_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.20 r
+  clock uncertainty                                0.70      1.90
+  library hold time                                0.07      1.96
+  data required time                                         1.96
+  ------------------------------------------------------------------------
+  data required time                                         1.96
+  data arrival time                                         -1.88
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_/Q (DFCNQD0BWP7T)
+                                                   0.52      1.66 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U395/ZN (MOAI22D1BWP7T)
+                                                   0.14      1.80 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_/D (DFCNQD0BWP7T)
+                                                   0.00      1.80 f
+  data arrival time                                          1.80
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.12      1.12
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_c_ex_o_reg_27_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.12 r
+  clock uncertainty                                0.70      1.82
+  library hold time                                0.06      1.88
+  data required time                                         1.88
+  ------------------------------------------------------------------------
+  data required time                                         1.88
+  data arrival time                                         -1.80
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_17_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_17_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_17_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_17_/Q (EDFCNQD0BWP7T)
+                                                   0.24      1.39 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_18975/Z (DEL02BWP7T)
+                                                   0.25      1.64 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U67/Z (AO222D1BWP7T)
+                                                   0.08      1.72 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U48/ZN (AOI22D0BWP7T)
+                                                   0.07      1.79 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U47/ZN (IOA21D0BWP7T)
+                                                   0.06      1.85 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_17_/D (DFCNQD1BWP7T)
+                                                   0.00      1.85 f
+  data arrival time                                          1.85
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_17_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.85
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_22_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_22_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_22_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_22_/Q (EDFCNQD0BWP7T)
+                                                   0.23      1.38 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_18430/Z (DEL02BWP7T)
+                                                   0.24      1.63 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U61/Z (AO222D1BWP7T)
+                                                   0.08      1.71 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U38/ZN (AOI22D0BWP7T)
+                                                   0.08      1.79 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U37/ZN (IOA21D0BWP7T)
+                                                   0.07      1.85 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_22_/D (DFCNQD1BWP7T)
+                                                   0.00      1.85 f
+  data arrival time                                          1.85
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_22_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.85
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_0_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_0_/Q (DFCNQD0BWP7T)
+                                                   0.29      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ropt_h_inst_19983/Z (CKBD12BWP7T)
+                                                   0.07      1.37 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/U157/ZN (NR2XD8BWP7T)
+                                                   0.03      1.40 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/U165/ZN (AOI222D0BWP7T)
+                                                   0.08      1.48 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/U166/ZN (CKND2D0BWP7T)
+                                                   0.06      1.53 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/copt_h_inst_18788/Z (DEL02BWP7T)
+                                                   0.23      1.77 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_1_/D (DFCNQD0BWP7T)
+                                                   0.00      1.77 r
+  data arrival time                                          1.77
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.13      1.13
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CS_reg_1_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.13 r
+  clock uncertainty                                0.70      1.84
+  library hold time                                0.01      1.84
+  data required time                                         1.84
+  ------------------------------------------------------------------------
+  data required time                                         1.84
+  data arrival time                                         -1.77
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.08
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_1__29_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_29_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.13      1.13
+
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_1__29_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.13 r
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/buffer_reg_1__29_/Q (EDFCNQD0BWP7T)
+                                                   0.20      1.33 r
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/U299/ZN (AOI22D0BWP7T)
+                                                   0.05      1.37 f
+  top_p/peripherals_i/apb_spi_master_i/u_txfifo/U303/ZN (ND4D0BWP7T)
+                                                   0.15      1.53 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U54/Z (AO222D0BWP7T)
+                                                   0.16      1.69 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U85/ZN (AOI22D0BWP7T)
+                                                   0.05      1.74 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U84/ZN (IOA21D0BWP7T)
+                                                   0.05      1.79 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_29_/D (DFCNQD1BWP7T)
+                                                   0.00      1.79 r
+  data arrival time                                          1.79
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_29_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.16 r
+  clock uncertainty                                0.70      1.86
+  library hold time                                0.00      1.86
+  data required time                                         1.86
+  ------------------------------------------------------------------------
+  data required time                                         1.86
+  data arrival time                                         -1.79
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__36_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.29      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11397/Z (DEL02BWP7T)
+                                                   0.40      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__36_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.70 f
+  data arrival time                                          1.70
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__36_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.07      1.77
+  data required time                                         1.77
+  ------------------------------------------------------------------------
+  data required time                                         1.77
+  data arrival time                                         -1.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__36_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.29      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11397/Z (DEL02BWP7T)
+                                                   0.40      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__36_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.70 f
+  data arrival time                                          1.70
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__36_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.07      1.77
+  data required time                                         1.77
+  ------------------------------------------------------------------------
+  data required time                                         1.77
+  data arrival time                                         -1.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__36_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.29      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11397/Z (DEL02BWP7T)
+                                                   0.40      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/U132/ZN (CKND0BWP7T)
+                                                   0.09      1.79 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/U47/ZN (MOAI22D1BWP7T)
+                                                   0.05      1.83 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__36_/D (DFCNQD0BWP7T)
+                                                   0.00      1.83 f
+  data arrival time                                          1.83
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__36_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                                0.07      1.91
+  data required time                                         1.91
+  ------------------------------------------------------------------------
+  data required time                                         1.91
+  data arrival time                                         -1.83
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__36_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.29      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11397/Z (DEL02BWP7T)
+                                                   0.40      1.70 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__36_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.70 f
+  data arrival time                                          1.70
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_2__36_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.07      1.77
+  data required time                                         1.77
+  ------------------------------------------------------------------------
+  data required time                                         1.77
+  data arrival time                                         -1.70
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_8_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_8_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_8_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_8_/Q (EDFCNQD0BWP7T)
+                                                   0.23      1.38 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_18687/Z (DEL02BWP7T)
+                                                   0.24      1.62 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U45/Z (AO222D1BWP7T)
+                                                   0.10      1.72 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U66/ZN (AOI22D0BWP7T)
+                                                   0.10      1.82 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U65/ZN (IOA21D0BWP7T)
+                                                   0.07      1.89 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_8_/D (DFCNQD1BWP7T)
+                                                   0.00      1.89 f
+  data arrival time                                          1.89
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.19      1.19
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_8_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.19 r
+  clock uncertainty                                0.70      1.89
+  library hold time                                0.06      1.96
+  data required time                                         1.96
+  ------------------------------------------------------------------------
+  data required time                                         1.96
+  data arrival time                                         -1.89
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__7_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__7_/Q (EDFCNQD0BWP7T)
+                                                   0.21      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18237/Z (BUFFD0BWP7T)
+                                                   0.05      1.35 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U224/ZN (AOI22D0BWP7T)
+                                                   0.05      1.40 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18796/Z (DEL02BWP7T)
+                                                   0.24      1.64 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U225/ZN (CKND2D0BWP7T)
+                                                   0.08      1.73 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_0_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.73 f
+  data arrival time                                          1.73
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.04      1.79
+  data required time                                         1.79
+  ------------------------------------------------------------------------
+  data required time                                         1.79
+  data arrival time                                         -1.73
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__18_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__18_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__18_/Q (EDFCNQD0BWP7T)
+                                                   0.21      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_17771/Z (BUFFD0BWP7T)
+                                                   0.05      1.35 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18384/Z (BUFFD0BWP7T)
+                                                   0.05      1.40 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18838/Z (BUFFD0BWP7T)
+                                                   0.05      1.45 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_19102/Z (BUFFD0BWP7T)
+                                                   0.05      1.50 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U257/ZN (AOI22D0BWP7T)
+                                                   0.10      1.61 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U258/ZN (CKND2D0BWP7T)
+                                                   0.11      1.72 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_11_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.72 f
+  data arrival time                                          1.72
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_11_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.05      1.79
+  data required time                                         1.79
+  ------------------------------------------------------------------------
+  data required time                                         1.79
+  data arrival time                                         -1.72
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__39_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/RID_REG_reg_3_/Q (EDFCNQD0BWP7T)
+                                                   0.28      1.29 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/copt_h_inst_11364/Z (DEL02BWP7T)
+                                                   0.38      1.67 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/U135/ZN (INVD1BWP7T)
+                                                   0.05      1.73 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/ropt_h_inst_20011/Z (BUFFD0BWP7T)
+                                                   0.07      1.80 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/U50/ZN (MOAI22D1BWP7T)
+                                                   0.04      1.84 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__39_/D (DFCNQD0BWP7T)
+                                                   0.00      1.84 f
+  data arrival time                                          1.84
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__39_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                                0.07      1.91
+  data required time                                         1.91
+  ------------------------------------------------------------------------
+  data required time                                         1.91
+  data arrival time                                         -1.84
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_11_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_11_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_11_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.16 r
+  top_p/peripherals_i/apb_spi_master_i/u_axiregs/spi_addr_reg_11_/Q (EDFCNQD0BWP7T)
+                                                   0.24      1.40 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/copt_h_inst_17776/Z (DEL02BWP7T)
+                                                   0.24      1.64 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/U73/Z (AO222D1BWP7T)
+                                                   0.09      1.73 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U60/ZN (AOI22D0BWP7T)
+                                                   0.10      1.82 r
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/U59/ZN (IOA21D0BWP7T)
+                                                   0.07      1.89 f
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_11_/D (DFCNQD1BWP7T)
+                                                   0.00      1.89 f
+  data arrival time                                          1.89
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.19      1.19
+  top_p/peripherals_i/apb_spi_master_i/u_spictrl/u_txreg/data_int_reg_11_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.19 r
+  clock uncertainty                                0.70      1.90
+  library hold time                                0.06      1.96
+  data required time                                         1.96
+  ------------------------------------------------------------------------
+  data required time                                         1.96
+  data arrival time                                         -1.89
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__8_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__8_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__8_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.31 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_16661/Z (DEL02BWP7T)
+                                                   0.23      1.54 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U227/ZN (AOI22D0BWP7T)
+                                                   0.07      1.61 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U228/ZN (CKND2D0BWP7T)
+                                                   0.11      1.72 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_1_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.72 f
+  data arrival time                                          1.72
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_1_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.05      1.79
+  data required time                                         1.79
+  ------------------------------------------------------------------------
+  data required time                                         1.79
+  data arrival time                                         -1.72
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__17_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__17_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__17_/Q (EDFCNQD0BWP7T)
+                                                   0.21      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U254/ZN (AOI22D0BWP7T)
+                                                   0.07      1.37 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_17620/Z (DEL0BWP7T)
+                                                   0.31      1.68 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U255/ZN (CKND2D0BWP7T)
+                                                   0.06      1.74 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_10_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.74 f
+  data arrival time                                          1.74
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_10_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.04      1.80
+  data required time                                         1.80
+  ------------------------------------------------------------------------
+  data required time                                         1.80
+  data arrival time                                         -1.74
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__16_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__16_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_1__16_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.30 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_18189/Z (BUFFD0BWP7T)
+                                                   0.06      1.36 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U251/ZN (AOI22D0BWP7T)
+                                                   0.08      1.44 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U252/ZN (CKND2D0BWP7T)
+                                                   0.07      1.51 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/copt_h_inst_18570/Z (DEL02BWP7T)
+                                                   0.24      1.75 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_9_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.75 f
+  data arrival time                                          1.75
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_9_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.03      1.81
+  data required time                                         1.81
+  ------------------------------------------------------------------------
+  data required time                                         1.81
+  data arrival time                                         -1.75
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.07
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_30_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U152/ZN (NR2XD8BWP7T)
+                                                   0.05      1.86 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_30_/D (DFCNQD1BWP7T)
+                                                   0.00      1.86 f
+  data arrival time                                          1.86
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_30_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.86
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_/CP (DFSNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_/Q (DFSNQD0BWP7T)
+                                                   0.50      1.65 f
+  top_p/peripherals_i/apb_pulpino_i/U224/Z (AO22D0BWP7T)
+                                                   0.21      1.86 f
+  top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_/D (DFSNQD0BWP7T)
+                                                   0.00      1.86 f
+  data arrival time                                          1.86
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+  top_p/peripherals_i/apb_pulpino_i/clk_gate_q_reg_2_/CP (DFSNQD0BWP7T)
+                                                   0.00      1.16 r
+  clock uncertainty                                0.70      1.86
+  library hold time                                0.06      1.92
+  data required time                                         1.92
+  ------------------------------------------------------------------------
+  data required time                                         1.92
+  data arrival time                                         -1.86
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_user_S_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_0__35_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_user_S_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/error_user_S_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.23      1.24 f
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/copt_h_inst_16116/Z (DEL02BWP7T)
+                                                   0.34      1.58 f
+  top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/BR_ALLOC/U104/Z (AO22D0BWP7T)
+                                                   0.13      1.71 f
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/U60/ZN (CKND0BWP7T)
+                                                   0.05      1.76 r
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/U59/ZN (MUX2ND0BWP7T)
+                                                   0.05      1.81 f
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_0__35_/D (DFCND0BWP7T)
+                                                   0.00      1.81 f
+  data arrival time                                          1.81
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.12      1.12
+  top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/FIFO_REGISTERS_reg_0__35_/CP (DFCND0BWP7T)
+                                                   0.00      1.12 r
+  clock uncertainty                                0.70      1.82
+  library hold time                                0.05      1.87
+  data required time                                         1.87
+  ------------------------------------------------------------------------
+  data required time                                         1.87
+  data arrival time                                         -1.81
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: gpio_in[4] (input port clocked by clk)
+  Endpoint: top_p/peripherals_i/apb_gpio_i/r_gpio_sync0_reg_4_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      1.08      1.08
+  input external delay                             0.20      1.28
+
+  gpio_in[4] (in)                                  0.00      1.28 f
+  genblk1_4__gpio_in_pad/PAD (PDDW0408SCDG)        0.00      1.28 f
+  genblk1_4__gpio_in_pad/C (PDDW0408SCDG)          0.49      1.78 f ~
+  top_p/peripherals_i/apb_gpio_i/r_gpio_sync0_reg_4_/D (DFCNQD0BWP7T)
+                                                   0.05      1.83 f
+  data arrival time                                          1.83
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/peripherals_i/apb_gpio_i/r_gpio_sync0_reg_4_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                                0.05      1.89
+  data required time                                         1.89
+  ------------------------------------------------------------------------
+  data required time                                         1.89
+  data arrival time                                         -1.83
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_24_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U140/ZN (NR2D1BWP7T)
+                                                   0.05      1.86 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_24_/D (DFCNQD1BWP7T)
+                                                   0.00      1.86 f
+  data arrival time                                          1.86
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_24_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.16 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.92
+  data required time                                         1.92
+  ------------------------------------------------------------------------
+  data required time                                         1.92
+  data arrival time                                         -1.86
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_18_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/Q (DFCNQD0BWP7T)
+                                                   0.25      1.40 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U386/ZN (INVD1BWP7T)
+                                                   0.05      1.45 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U356/ZN (ND3D0BWP7T)
+                                                   0.05      1.50 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.16      1.66 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U164/Z (OR2D1BWP7T)
+                                                   0.16      1.83 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U132/ZN (NR2D1BWP7T)
+                                                   0.04      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_18_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.16      1.16
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_18_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.16 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_27_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U149/ZN (NR2D1BWP7T)
+                                                   0.06      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_27_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_27_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_ (rising edge-triggered flip-flop clocked by tck)
+  Endpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_ (rising edge-triggered flip-flop clocked by tck)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: tck
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.83      0.83
+
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_/CP (DFSND0BWP7T)
+                                                   0.00      0.83 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_/Q (DFSND0BWP7T)
+                                                   0.22      1.05 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/U23/ZN (AOI22D0BWP7T)
+                                                   0.07      1.12 f
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/U22/ZN (OAI211D0BWP7T)
+                                                   0.07      1.19 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/copt_h_inst_18777/Z (DEL0BWP7T)
+                                                   0.32      1.51 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_/D (DFSND0BWP7T)
+                                                   0.00      1.51 r
+  data arrival time                                          1.51
+
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.85      0.85
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_axi/axi_crc_i/crc_reg_27_/CP (DFSND0BWP7T)
+                                                   0.00      0.85 r
+  clock uncertainty                                0.70      1.56
+  library hold time                                0.02      1.57
+  data required time                                         1.57
+  ------------------------------------------------------------------------
+  data required time                                         1.57
+  data arrival time                                         -1.51
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_data_rx_reg_17_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__18_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.02      1.02
+
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_data_rx_reg_17_/CP (EDFCNQD1BWP7T)
+                                                   0.00      1.02 r
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_data_rx_reg_17_/Q (EDFCNQD1BWP7T)
+                                                   0.26      1.28 f
+  top_p/axi_interconnect_i/axi_node_i/copt_h_inst_15779/Z (DEL02BWP7T)
+                                                   0.28      1.56 f
+  top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_1__REQ_BLOCK/DW_ALLOC/WRITE_DATA_MUX/U23/Z (AO222D1BWP7T)
+                                                   0.16      1.73 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/U103/ZN (INVD1BWP7T)
+                                                   0.05      1.77 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/U29/ZN (MOAI22D1BWP7T)
+                                                   0.04      1.81 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__18_/D (DFCNQD0BWP7T)
+                                                   0.00      1.81 f
+  data arrival time                                          1.81
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/FIFO_REGISTERS_reg_3__18_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  clock uncertainty                                0.70      1.79
+  library hold time                                0.07      1.86
+  data required time                                         1.86
+  ------------------------------------------------------------------------
+  data required time                                         1.86
+  data arrival time                                         -1.81
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_25_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U151/ZN (NR2D1BWP7T)
+                                                   0.06      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_25_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_25_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__9_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.09      1.09
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__9_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.09 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/FIFO_REGISTERS_reg_0__9_/Q (EDFCNQD0BWP7T)
+                                                   0.22      1.31 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U230/ZN (AOI22D0BWP7T)
+                                                   0.06      1.36 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/copt_h_inst_17034/Z (DEL0BWP7T)
+                                                   0.31      1.67 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/U231/ZN (CKND2D0BWP7T)
+                                                   0.07      1.74 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_2_/D (EDFCNQD0BWP7T)
+                                                   0.00      1.74 f
+  data arrival time                                          1.74
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/ARADDR_REG_reg_2_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                               -0.04      1.80
+  data required time                                         1.80
+  ------------------------------------------------------------------------
+  data required time                                         1.80
+  data arrival time                                         -1.74
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_26_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U139/ZN (NR2D1BWP7T)
+                                                   0.06      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_26_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_26_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.01      1.01
+
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_1_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.01 r
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_1_/Q (DFCNQD0BWP7T)
+                                                   0.28      1.29 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/r101/U1_1_1/CO (HA1D0BWP7T)
+                                                   0.09      1.39 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/r101/U1_1_2/S (HA1D0BWP7T)
+                                                   0.07      1.46 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/copt_h_inst_18012/Z (DEL0BWP7T)
+                                                   0.29      1.75 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/U96/Z (AO22D0BWP7T)
+                                                   0.10      1.85 f
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_2_/D (DFCNQD0BWP7T)
+                                                   0.00      1.85 f
+  data arrival time                                          1.85
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.14      1.14
+  top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/READ_CTRL/CountBurst_CS_reg_2_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.14 r
+  clock uncertainty                                0.70      1.84
+  library hold time                                0.07      1.90
+  data required time                                         1.90
+  ------------------------------------------------------------------------
+  data required time                                         1.90
+  data arrival time                                         -1.85
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_ (rising edge-triggered flip-flop clocked by tck)
+  Endpoint: top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_ (rising edge-triggered flip-flop clocked by tck)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: tck
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.82      0.82
+
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_/CP (DFSND0BWP7T)
+                                                   0.00      0.82 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_/Q (DFSND0BWP7T)
+                                                   0.23      1.05 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/copt_h_inst_19125/Z (BUFFD0BWP7T)
+                                                   0.09      1.14 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/U22/ZN (AOI22D0BWP7T)
+                                                   0.06      1.20 f
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/U21/ZN (OAI211D0BWP7T)
+                                                   0.06      1.26 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/copt_h_inst_19185/Z (DEL02BWP7T)
+                                                   0.24      1.50 r
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_/D (DFSND0BWP7T)
+                                                   0.00      1.50 r
+  data arrival time                                          1.50
+
+  clock tck (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.84      0.84
+  top_p/core_region_i/adv_dbg_if_i/dbg_module_i/i_dbg_cpu_or1k/or1k_crc_i/crc_reg_9_/CP (DFSND0BWP7T)
+                                                   0.00      0.84 r
+  clock uncertainty                                0.70      1.54
+  library hold time                                0.02      1.56
+  data required time                                         1.56
+  ------------------------------------------------------------------------
+  data required time                                         1.56
+  data arrival time                                         -1.50
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_29_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__7_/Q (DFCNQD0BWP7T)
+                                                   0.27      1.43 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U370/ZN (INVD1BWP7T)
+                                                   0.06      1.48 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U175/ZN (ND2D1BWP7T)
+                                                   0.08      1.56 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.08      1.64 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U161/ZN (IND2D1BWP7T)
+                                                   0.17      1.81 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U150/ZN (NR2D1BWP7T)
+                                                   0.06      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_29_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_29_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_17_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/Q (DFCNQD0BWP7T)
+                                                   0.25      1.40 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U386/ZN (INVD1BWP7T)
+                                                   0.05      1.45 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U356/ZN (ND3D0BWP7T)
+                                                   0.05      1.50 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.16      1.66 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U164/Z (OR2D1BWP7T)
+                                                   0.16      1.83 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U134/ZN (NR2D1BWP7T)
+                                                   0.05      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_17_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_17_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.06
+
+
+
+  Startpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_21_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/CP (DFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/regs_q_reg_1__14_/Q (DFCNQD0BWP7T)
+                                                   0.25      1.40 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U386/ZN (INVD1BWP7T)
+                                                   0.05      1.45 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U356/ZN (ND3D0BWP7T)
+                                                   0.05      1.50 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U355/ZN (IAO21D0BWP7T)
+                                                   0.16      1.66 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U164/Z (OR2D1BWP7T)
+                                                   0.16      1.83 r
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/U136/ZN (NR2D1BWP7T)
+                                                   0.04      1.87 f
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_21_/D (DFCNQD1BWP7T)
+                                                   0.00      1.87 f
+  data arrival time                                          1.87
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.17      1.17
+  top_p/peripherals_i/apb_event_unit_i/i_event_unit/irq_o_reg_21_/CP (DFCNQD1BWP7T)
+                                                   0.00      1.17 r
+  clock uncertainty                                0.70      1.87
+  library hold time                                0.06      1.93
+  data required time                                         1.93
+  ------------------------------------------------------------------------
+  data required time                                         1.93
+  data arrival time                                         -1.87
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.05
+
+
+
+  Startpoint: top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/RDATA_Q_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/FIFO_REGISTERS_reg_1__3_ (rising edge-triggered flip-flop clocked by gated_clocks)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.15      1.15
+
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/RDATA_Q_reg_0_/CP (EDFCNQD0BWP7T)
+                                                   0.00      1.15 r
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/RDATA_Q_reg_0_/Q (EDFCNQD0BWP7T)
+                                                   0.32      1.47 f
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/U131/ZN (CKND0BWP7T)
+                                                   0.24      1.71 r
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/U52/ZN (MUX2ND0BWP7T)
+                                                   0.09      1.80 f
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/FIFO_REGISTERS_reg_1__3_/D (DFCND0BWP7T)
+                                                   0.00      1.80 f
+  data arrival time                                          1.80
+
+  clock gated_clocks (rise edge)                   0.00      0.00
+  clock network delay (propagated)                 1.11      1.11
+  top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/FIFO_REGISTERS_reg_1__3_/CP (DFCND0BWP7T)
+                                                   0.00      1.11 r
+  clock uncertainty                                0.70      1.81
+  library hold time                                0.05      1.86
+  data required time                                         1.86
+  ------------------------------------------------------------------------
+  data required time                                         1.86
+  data arrival time                                         -1.80
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.05
+
+
+1

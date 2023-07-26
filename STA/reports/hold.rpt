@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : pulpino_top_pads
+Version: O-2018.06-SP1
+Date   : Wed Jul 12 08:56:58 2023
+****************************************
+
+
+  Startpoint: top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/scl_oen_reg
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/dscl_oen_reg
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Last common pin: top_p/peripherals_i/genblk1_6__core_clock_gate/gated/Q
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.18       0.18
+  top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/scl_oen_reg/CP (DFSNQD2BWP7T)
+                                                          0.00       0.18 r
+  top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/scl_oen_reg/Q (DFSNQD2BWP7T)
+                                                          0.23       0.41 f
+  top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/dscl_oen_reg/D (DFQD1BWP7T)
+                                                          0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock gated_clocks (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.16       0.16
+  clock reconvergence pessimism                           0.00       0.16
+  clock uncertainty                                       0.70       0.86
+  top_p/peripherals_i/apb_i2c_i/byte_controller/bit_controller/dscl_oen_reg/CP (DFQD1BWP7T)
+                                                                     0.86 r
+  library hold time                                       0.06       0.92
+  data required time                                                 0.92
+  ------------------------------------------------------------------------------
+  data required time                                                 0.92
+  data arrival time                                                 -0.41
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.51
+
+
+1

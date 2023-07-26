@@ -1,0 +1,190 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : pulpino_top_pads
+Version: O-2018.06-SP1
+Date   : Wed Jul 12 08:56:58 2023
+****************************************
+
+
+  Startpoint: top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operator_ex_o_reg_1_
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_b_ex_o_reg_28_
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Last common pin: top_p/core_region_i/CORE_RISCV_CORE/core_clock_gate_i/gated/Q
+  Path Group: gated_clocks
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.34       0.34
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operator_ex_o_reg_1_/CP (DFSNQD0BWP7T)
+                                                          0.00       0.34 r
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operator_ex_o_reg_1_/Q (DFSNQD0BWP7T)
+                                                          0.22 &     0.56 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/copt_h_inst_16546/Z (DEL02BWP7T)
+                                                          0.44 &     1.00 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U1836/ZN (NR2D0BWP7T)
+                                                          0.43 &     1.43 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U14/ZN (INR2XD2BWP7T)
+                                                          0.40 &     1.83 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U1834/ZN (XNR2D0BWP7T)
+                                                          0.19 &     2.02 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_1/CO (FA1D0BWP7T)
+                                                          0.21 &     2.22 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_2/CO (FA1D0BWP7T)
+                                                          0.15 &     2.37 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_3/CO (FA1D0BWP7T)
+                                                          0.15 &     2.51 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_4/CO (FA1D0BWP7T)
+                                                          0.14 &     2.65 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_5/CO (FA1D0BWP7T)
+                                                          0.14 &     2.79 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_6/CO (FA1D0BWP7T)
+                                                          0.15 &     2.93 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_7/CO (FA1D0BWP7T)
+                                                          0.14 &     3.08 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_8/CO (FA1D0BWP7T)
+                                                          0.23 &     3.31 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U6/Z (AO22D0BWP7T)
+                                                          0.22 &     3.52 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_10/CO (FA1D0BWP7T)
+                                                          0.19 &     3.71 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_11/CO (FA1D0BWP7T)
+                                                          0.14 &     3.85 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_12/CO (FA1D0BWP7T)
+                                                          0.14 &     4.00 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_13/CO (FA1D0BWP7T)
+                                                          0.15 &     4.15 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_14/CO (FA1D0BWP7T)
+                                                          0.14 &     4.29 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_15/CO (FA1D0BWP7T)
+                                                          0.14 &     4.44 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_16/CO (FA1D0BWP7T)
+                                                          0.19 &     4.62 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_17/CO (FA1D0BWP7T)
+                                                          0.22 &     4.84 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U5/ZN (OAI21D0BWP7T)
+                                                          0.07 &     4.91 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U4/ZN (IOA21D0BWP7T)
+                                                          0.07 &     4.98 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_19/CO (FA1D0BWP7T)
+                                                          0.15 &     5.13 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_20/CO (FA1D0BWP7T)
+                                                          0.15 &     5.28 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_21/CO (FA1D0BWP7T)
+                                                          0.14 &     5.42 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_22/CO (FA1D0BWP7T)
+                                                          0.14 &     5.56 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_23/CO (FA1D0BWP7T)
+                                                          0.13 &     5.70 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_24/CO (FA1D0BWP7T)
+                                                          0.14 &     5.83 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_25/CO (FA1D0BWP7T)
+                                                          0.14 &     5.97 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_26/CO (FA1D0BWP7T)
+                                                          0.16 &     6.13 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U3/Z (AO22D0BWP7T)
+                                                          0.13 &     6.26 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_168/U1_28/S (FA1D0BWP7T)
+                                                          0.20 &     6.47 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_24/CO (FA1D0BWP7T)
+                                                          0.24 &     6.71 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_25/CO (FA1D0BWP7T)
+                                                          0.15 &     6.86 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_26/CO (FA1D0BWP7T)
+                                                          0.15 &     7.01 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_27/CO (FA1D0BWP7T)
+                                                          0.15 &     7.16 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_28/CO (FA1D0BWP7T)
+                                                          0.16 &     7.31 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_29/CO (FA1D0BWP7T)
+                                                          0.15 &     7.46 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U1_30/CO (FA1D0BWP7T)
+                                                          0.15 &     7.61 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/add_182/U2/Z (XOR2D1BWP7T)
+                                                          0.13 &     7.74 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U1417/ZN (AOI222D0BWP7T)
+                                                          0.23 &     7.97 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U1416/ZN (CKND0BWP7T)
+                                                          0.31 &     8.29 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U41/Z (CKAN2D1BWP7T)
+                                                          0.19 &     8.47 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U30/ZN (INVD1BWP7T)
+                                                          0.31 &     8.79 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U206/ZN (OAI21D0BWP7T)
+                                                          0.20 &     8.98 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/srl_283/U286/ZN (AOI22D0BWP7T)
+                                                          0.15 &     9.13 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/srl_283/U285/ZN (OAI221D0BWP7T)
+                                                          0.26 &     9.39 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/srl_283/U179/Z (AO22D0BWP7T)
+                                                          0.19 &     9.58 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/srl_283/U178/ZN (AOI221D0BWP7T)
+                                                          0.33 &     9.91 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/srl_283/U176/ZN (OAI221D0BWP7T)
+                                                          0.28 &    10.19 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U532/ZN (AOI21D0BWP7T)
+                                                          0.17 &    10.36 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U531/ZN (OAI221D0BWP7T)
+                                                          0.31 &    10.67 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U530/ZN (CKND0BWP7T)
+                                                          0.15 &    10.82 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U239/ZN (MUX2ND0BWP7T)
+                                                          0.20 &    11.02 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U134/Z (AO22D0BWP7T)
+                                                          0.16 &    11.18 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U135/ZN (AOI221D0BWP7T)
+                                                          0.15 &    11.33 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U136/ZN (OAI22D0BWP7T)
+                                                          0.11 &    11.44 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U137/ZN (AOI22D0BWP7T)
+                                                          0.14 &    11.58 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U149/ZN (OAI22D0BWP7T)
+                                                          0.15 &    11.73 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U74/ZN (ND3D0BWP7T)
+                                                          0.26 &    11.99 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U5/ZN (INVD1BWP7T)
+                                                          0.29 &    12.28 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U863/ZN (MUX2ND0BWP7T)
+                                                          0.16 &    12.44 r
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/alu_i/U840/ZN (ND4D0BWP7T)
+                                                          0.65 &    13.09 f
+  top_p/core_region_i/CORE_RISCV_CORE/ex_stage_i/U32/Z (AO222D1BWP7T)
+                                                          0.37 &    13.46 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U1084/ZN (INVD1BWP7T)
+                                                          0.18 &    13.64 r
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U955/ZN (OAI21D0BWP7T)
+                                                          0.22 &    13.86 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U1655/ZN (AOI22D0BWP7T)
+                                                          0.15 &    14.01 r
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U1656/ZN (CKND2D0BWP7T)
+                                                          0.28 &    14.29 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U904/ZN (AOI222D1BWP7T)
+                                                          0.64 &    14.93 r
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/U648/ZN (INVD1BWP7T)
+                                                          0.13 &    15.07 f
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_b_ex_o_reg_28_/D (EDFCNQD0BWP7T)
+                                                          0.00 &    15.07 f
+  data arrival time                                                 15.07
+
+  clock gated_clocks (rise edge)                         20.00      20.00
+  clock network delay (propagated)                        0.31      20.31
+  clock reconvergence pessimism                           0.00      20.31
+  clock uncertainty                                      -0.70      19.61
+  top_p/core_region_i/CORE_RISCV_CORE/id_stage_i/alu_operand_b_ex_o_reg_28_/CP (EDFCNQD0BWP7T)
+                                                                    19.61 r
+  library setup time                                     -0.14      19.47
+  data required time                                                19.47
+  ------------------------------------------------------------------------------
+  data required time                                                19.47
+  data arrival time                                                -15.07
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        4.40
+
+
+1

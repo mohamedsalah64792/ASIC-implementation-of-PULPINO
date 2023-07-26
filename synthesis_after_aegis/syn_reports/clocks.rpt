@@ -1,0 +1,41 @@
+Warning: Design 'pulpino_top_pads' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : clocks
+Design : pulpino_top_pads
+Version: O-2018.06-SP1
+Date   : Mon Jul 10 22:53:40 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             20.00   {0 10}                        {clk}
+gated_clocks    20.00   {0 10}              G         {top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_0__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_1__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_2__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_1__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_2__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/core_region_i/CORE_RISCV_CORE/core_clock_gate_i/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/ar_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/aw_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/b_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/w_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_aw_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_b_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_aw_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_b_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_ar_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_aw_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_b_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_w_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/genblk1_0__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_1__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_2__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_3__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_4__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_5__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_6__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_7__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_8__core_clock_gate/gated/Q}
+inverted_adbg_CLK
+              1000.00   {500 1000}          G         {top_p/core_region_i/adv_dbg_if_i/cluster_tap_i/u_clk_inv/clk_o}
+inverted_spi_slave_CLK
+              1000.00   {500 1000}          G         {top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_txreg/clk_inv_i/clk_o}
+spi_sck       1000.00   {0 500}                       {spi_clk_i}
+tck           1000.00   {0 500}                       {tck_i}
+--------------------------------------------------------------------------------
+
+Generated     Master         Generated      Master         Waveform
+Clock         Source         Source         Clock          Modification
+--------------------------------------------------------------------------------
+gated_clocks  clk            {top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_0__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_1__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_REQ_BLOCK_GEN_2__REQ_BLOCK/DW_ALLOC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_0__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_1__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/axi_interconnect_i/axi_node_i/u_RESP_BLOCK_GEN_2__RESP_BLOCK/DW_ADDR_DEC/MASTER_ID_FIFO/cg_cell/gated/Q top_p/core_region_i/CORE_RISCV_CORE/core_clock_gate_i/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/ar_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/aw_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/b_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/r_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/axi_slice_core2axi/WITH_SLICE_axi_slice_i/w_buffer_i/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_aw_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_b_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/data_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_ar_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_aw_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_b_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_r_buffer_LP/buffer_i/cg_cell/gated/Q top_p/core_region_i/instr_mem_axi_if/axi_mem_if_SP_i/Slave_w_buffer_LP/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_ar_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_aw_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_b_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_r_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/axi2apb_i/genblk1_axi2apb_i/Slave_w_buffer/buffer_i/cg_cell/gated/Q top_p/peripherals_i/genblk1_0__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_1__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_2__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_3__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_4__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_5__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_6__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_7__core_clock_gate/gated/Q top_p/peripherals_i/genblk1_8__core_clock_gate/gated/Q}
+                                            clk            divide_by(1)
+inverted_adbg_CLK
+              tck_i          {top_p/core_region_i/adv_dbg_if_i/cluster_tap_i/u_clk_inv/clk_o}
+                                            tck            divide_by(1)
+inverted_spi_slave_CLK
+              spi_clk_i      {top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_txreg/clk_inv_i/clk_o}
+                                            spi_sck        divide_by(1)
+--------------------------------------------------------------------------------
+1

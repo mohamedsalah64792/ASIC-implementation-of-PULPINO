@@ -1,0 +1,32 @@
+set design pulpino_top_pads
+lappend search_path /home/ICer/Asic_pulpino/DB
+lappend search_path /home/ICer/Asic_pulpino/ICC/output_aegis
+lappend search_path /home/ICer/Asic_pulpino/ICC/Constraints
+
+set link_path "* tcbn65lpbwp7ttc.db ts1n65lpll1024x8m4.db tphn65lpnv2od3_sltc1.db aegis_lib.db"
+current_design $design
+read_verilog icc_netlist_pt.v
+
+link
+source /home/ICer/Asic_pulpino/ICC/output_aegis/ChipTop.sdc
+#source /home/ICer/Asic_pulpino/ICC/Constraints/constraints_placement.tcl
+#source /home/ICer/Asic_pulpino/STA/constrains.tcl
+
+read_parasitics -format spef "ChipTop.spf.worst_25.spef"
+#read_parasitics -format spef ../../rcxt/cmax/cv32e40p_core_cmax_tm40.spef
+set_propagated_clock [get_clocks *]
+update_timing
+report_timing -delay_type min > ./reports/hold.rpt
+report_timing -delay_type max > ./reports/setup.rpt
+fix_eco_timing -type hold -method insert_buffer -buffer_list {BUFFD0BWP7T BUFFD10BWP7T BUFFD12BWP7T BUFFD1BWP7T BUFFD1P5BWP7T BUFFD2BWP7T BUFFD2P5BWP7T}
+fix_eco_timing -type hold -method insert_buffer_at_load_pins  -buffer_list {BUFFD0BWP7T BUFFD10BWP7T BUFFD12BWP7T BUFFD1BWP7T BUFFD1P5BWP7T BUFFD2BWP7T BUFFD2P5BWP7T}
+write_changes -format icctcl -output ./reports/ecol.tcl
+save_session $pulpino.session
+write_sdf ./reports/${design}.sdf
+
+
+report_constraint -all_violators -significant_digits 4 > ./${design}.max_constr.rpt
+report_timing -delay_type max -nworst 40 -significant_digits 4 > 
+./${design}.max_timing.rpt
+
+

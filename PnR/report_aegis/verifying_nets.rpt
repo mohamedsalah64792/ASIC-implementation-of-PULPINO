@@ -1,0 +1,32 @@
+Info: verify_pg_nets will be obsolete. Please use check_pg_connectivity.
+Loading cell instances...
+Number of Standard Cells: 65573
+Number of Macro Cells: 65
+Number of IO Pad Cells: 3688
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 483
+Number of VDD Vias: 56127
+Number of VDD Terminals: 0
+Number of VSS Wires: 422
+Number of VSS Vias: 55723
+Number of VSS Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 4 seconds.

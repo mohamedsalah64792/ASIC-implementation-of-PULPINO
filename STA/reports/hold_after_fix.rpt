@@ -1,0 +1,52 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : pulpino_top_pads
+Version: O-2018.06-SP1
+Date   : Sun Jul  9 07:49:38 2023
+****************************************
+
+
+  Startpoint: top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Endpoint: top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_
+               (rising edge-triggered flip-flop clocked by gated_clocks)
+  Last common pin: top_p/peripherals_i/genblk1_0__core_clock_gate/gated/Q
+  Path Group: gated_clocks
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock gated_clocks (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.20       0.20
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_/CP (DFCNQD0BWP7T)
+                                                          0.00       0.20 r
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_/Q (DFCNQD0BWP7T)
+                                                          0.48 &     0.68 f
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/add_154/U37/Z (XOR2D1BWP7T)
+                                                          0.21 &     0.89 f
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/U19/Z (AO222D1BWP7T)
+                                                          0.07 &     0.96 f
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_/D (DFCNQD0BWP7T)
+                                                          0.00 &     0.96 f
+  data arrival time                                                  0.96
+
+  clock gated_clocks (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.20       0.20
+  clock reconvergence pessimism                           0.00       0.20
+  clock uncertainty                                       0.70       0.90
+  top_p/peripherals_i/axi_spi_slave_i/axi_spi_slave_i/u_axiplug/curr_addr_reg_18_/CP (DFCNQD0BWP7T)
+                                                                     0.90 r
+  library hold time                                       0.06       0.96
+  data required time                                                 0.96
+  ------------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
